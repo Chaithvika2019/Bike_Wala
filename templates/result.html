@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>result</title>
+    <link href="static/result.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>RESULTS</h1>
+    <div>
+        <table>
+            <tr>
+                <th>bikename</th>
+                <th>bikerating</th>
+                <th>bikeprice</th>
+                <th>bikeMilage_1</th>
+                <th>bikeReviewRating</th>
+                <th>BikeHeadingReview</th>
+                <th>bikeReviewerName</th>
+                <th>BikeReviewContent</th>
+            </tr>
+            {%for review in reviews%}
+            <tr class="tab">
+                <td>
+                    {{review['bikename']}}
+                </td>
+                <td>
+                    {{review['bikerating']}}
+                </td>
+                <td>
+                    {{review['bikeprice']}}
+                </td>
+                <td>
+                    {{review['bikeMilage_1']}}
+                </td>
+                <td>
+                    {{review['bikeReviewRating']}}
+                </td>
+                <td>
+                    {{review['BikeHeadingReview']}}
+                </td>
+              <td>
+                    {{review['bikeReviewerName']}}
+                </td>
+                <td>
+                    {{review['BikeReviewContent']}}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+
+</html>
+
+</body>
+</html>
