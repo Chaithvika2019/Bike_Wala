@@ -1,21 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+
 <body>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>result</title>
+    <title>Available_bikes</title>
+<!--                                                      page title-->
     <link href="static/result.css" rel="stylesheet">
+
 </head>
 
 <body>
     <h1>RESULTS</h1>
+<!--                                             this line is heading for page-->
     <div>
         <table>
             <tr>
@@ -23,12 +21,13 @@
                 <th>bikerating</th>
                 <th>bikeprice</th>
                 <th>bikeMilage_1</th>
+<!--                                              here mention with <th></th> tags are all table headings-->
                 <th>bikeReviewRating</th>
                 <th>BikeHeadingReview</th>
                 <th>bikeReviewerName</th>
                 <th>BikeReviewContent</th>
             </tr>
-            {%for review in reviews%}
+            {%for review in review%}
             <tr class="tab">
                 <td>
                     {{review['bikename']}}
@@ -40,6 +39,7 @@
                     {{review['bikeprice']}}
                 </td>
                 <td>
+<!--                                                                        here mentioned with <td></td> are all the table data-->
                     {{review['bikeMilage_1']}}
                 </td>
                 <td>
@@ -62,5 +62,4 @@
 
 </html>
 
-</body>
-</html>
+
